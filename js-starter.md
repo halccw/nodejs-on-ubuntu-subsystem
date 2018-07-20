@@ -142,3 +142,22 @@ package.json
 * bundle splitting
 * hot module reloading
 * webpack2 offers tree shaking
+
+## Debug bundle file
+* Use source map
+
+# Linting
+* JSLink
+* JSHint
+* ESLint - de facto standard
+
+## ESLint
+* Configure ESLint
+  - Where to put configurations?
+  - Which rules?
+  - Warning or errors?
+  - plugins?
+  - presets?
+
+* Issue: ESLint does not watch files
+  - Use eslint-watch package
