@@ -72,5 +72,73 @@ package.json
 * Run scripts in parallel
 
 # Transpiling
+* TypeScript
+    - Enhanced autocomplete
+    - enhanced readability
+    - safer refactoring
+    - interfaces, etc
+    - cons: not all libraries are compatible with TypeScript
+* Babel
+    - Write \standardized JS
+    - leverage full JS ecosystem
+    - use experimental features earlier
+    - no type defs, annotations required
+    - ES6 imports are statically analyzable
+* Elm
+    - nothing like JS
+    - functional paradigm
 
-# Bundler
+## Babel
+* babel configuration can be put in either .babelrc or package.json
+* ES6
+* node index.js -> babel-node index.js
+
+# Bundling
+* why bundle? 
+    - CommonJS doesn't work in web browsers
+    - pacakge project into file(s)
+    - save bandwidth
+    - optmized to improve Node perf
+
+## Module formats
+* IIFE, AMD, CommonJS, UMD, ES6 Modules
+* CommonJS
+    - syntx: var ex = require('express');
+* ES 6
+    - syntax: import ex from 'express';
+    - standardized 
+    - statically analyzable
+        - improved autocomplete
+        - intelligent refactoring
+        - fails fast
+        - tree shaking (dead code elimination)
+    - easy to read
+        - named imports
+        - default exports
+
+
+## Bundlers
+* browserify
+    - bundle npm packages for the web
+    - large plugin ecosystem
+* webpack
+    - full feature
+    - bundles CSS, images, fonts, HTML, etc like JS
+    - built in hot-reloading web server (in memory)
+* rollup
+    - tree shaking to reduce bundle size
+    - faster loading production code
+    - quite new
+    - great for library authors
+* JSPM
+    - uses SystemJS, a universal module loader
+    - can load module at runtime
+    - built in package manager
+    - uses rollup
+
+## webpack
+* bundle all types of files
+    - CSS, images, fonts, HTML
+* bundle splitting
+* hot module reloading
+* webpack2 offers tree shaking
