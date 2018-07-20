@@ -33,9 +33,12 @@ echo "export LS_COLORS" >> ~/.bashrc
 echo "PS1='\e[37;1m\u@\e[35m\W\e[0m\$ ' # this will change your prompt format" >> ~/.bashrc
 source ~/.bashrc
 
+# Change vim color scheme
+echo "colorscheme desert" >> .vimrc
+
 # Create a share folder between Linux and Windows
 # Create projects folder under your C drive and put a ref link in Linux home dir
-cd /mnt/c # all Widnows drives is under /mnt
+cd /mnt/c # all Widnows drives are under /mnt
 mkdir projects
 cd ~
 ln -s /mnt/c/projects/ projects
