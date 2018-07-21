@@ -161,3 +161,33 @@ package.json
 
 * Issue: ESLint does not watch files
   - Use eslint-watch package
+
+# Testing and Continuous Integration
+* Unit test: independent test on a single function or module
+* Integration test: interactions between modules
+* UI test: automate interactions with UI
+
+## Testing frameworks
+* Mocha
+* Jasmine
+* Tape
+* QUnit
+* AVA
+* Jest: For React, wrapper on Jasmine
+
+## Assertion library
+* chai
+
+## Helper libraries
+* JSDOM: simulate browser's DOM, run DOM related tests witout a browser
+* Cheerio: jQuery for the server, query virtual DOM with jQuery selectors
+
+## Where to run tests
+* Karma, Testem: run on browser
+* PhantomJS: headless browser
+* JSDOM: in-memory DOM
+
+## Continuous Integration (CI) server
+* Travis
+* Appveyor
+* Jenkins
