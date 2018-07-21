@@ -300,3 +300,52 @@ package.json
 * New Relic
 * Raygun
 * Use EmbeddedJS (EJS) to inject conditional logic into html
+
+# Deploy App to Production
+## Separate UI and API
+* Why?
+  - UI deployment is simple and low risk
+  - separate concerns
+  - scale back-end separately
+  - cheap UI hosting
+  - static frontend can be served by CDN
+  - use the API tech you like (Go, C#, etc)
+
+## Cloud Hosting
+* AWS
+* Azure
+* Heroku
+* Google Cloud Platform
+* Github, Surge: static UI hosting
+
+## Heroku for API
+0. go to your API repo
+1. `heroku login`
+2. `heroku create`: returns an URL and random appname
+3. `heroku git:remote -a [appname]`
+4. `git push heroku master`: publish the app to heroku
+
+## Automated UI Deployment
+0. go to your UI repo
+1. npm start (dev build)
+2. npm run build (prod build)
+3. npm run deploy (prod deploy)
+
+## Update Approaches
+* Options
+    * Yeoman
+    * github
+    * npm
+
+* What to centralize?
+    - Centralized
+        - buildScripts
+        - scripts in package.json
+        - webpack.config
+        - .eslintrc
+    - Decentralized
+        - .editorconfig
+        - .babelrc
+        - CI config
+        - package references in package.json
+
