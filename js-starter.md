@@ -336,16 +336,15 @@ package.json
     * Yeoman
     * github
     * npm
-
-* What to centralize?
-    - Centralized
-        - buildScripts
-        - scripts in package.json
-        - webpack.config
-        - .eslintrc
-    - Decentralized
-        - .editorconfig
-        - .babelrc
-        - CI config
-        - package references in package.json
+        * What to centralize?
+            - Centralized
+                - buildScripts - npm pacakage
+                - scripts in package.json - call scripts in npm package
+                - webpack.config - npm package
+                - .eslintrc - preset
+            - Decentralized
+                - .editorconfig
+                - .babelrc
+                - CI config
+                - package references in package.json
 
