@@ -299,3 +299,4 @@ package.json
 * Sentry
 * New Relic
 * Raygun
+* Use EmbeddedJS (EJS) to inject conditional logic into html
