@@ -243,3 +243,59 @@ package.json
 * `import {namedExport} from 'B.js'`
 
 # Project structure
+
+## Put JS in .js file
+* The Configuration Object Pattern
+  - SHOULD NOT generate JS from backend code
+  - SHOULD get personalized __data__ from database and use JS to determine the action
+
+## Organize by Feature
+* Organize by file types
+  - mode/
+  - view/
+  - component/
+* Organize by feature (for larger projects)
+  - user/
+  - courses/
+## Extract as much logic to POJOs 
+* POJO: plain old Javascript object
+
+# Automated Production Build
+## Minification
+* shorten variable/function names
+* removes comments
+* removes whitespaces/newlines
+* tree shaking (dead-code elimination)
+* debug via sourcemap
+
+## Sourcemaps
+
+## Dynamic HTML
+* auto reference bundle 
+* dynamic bundle name
+* Minify
+* 3 ways to handle
+  - hard code reference to bundle.js
+  - manipulate via node.js (regex)
+  - html-webpack-plugin
+* good for Cache busting
+
+## Bundle splitting
+* speed initial page load
+* avoid re-downloading all libraries
+  - put external depenencies in a bundle
+  - put our app in a separate bundle
+  - after app update client doesn't need to load external dependencies again
+
+## Cache busting
+* Set bundle.js not expired for up to 1 year
+* To push app change, we need to use new bundle name
+* Plan
+  - Hash bundle filename
+  - generate HTML dynamically
+  
+## Production Error logging
+* TrackJS
+* Sentry
+* New Relic
+* Raygun

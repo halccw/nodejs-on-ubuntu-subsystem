@@ -20,6 +20,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/users', function(req, res) {
+    // Pretend this is a real database
     res.json([
         {"id": 1, "firstName": "Bob"},
         {"id": 2, "firstName": "Jack"},
