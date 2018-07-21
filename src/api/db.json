@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 32252661,
+      "firstName": "Mackenzie",
+      "lastName": "Reinger",
+      "email": "Antoinette70@hotmail.com"
+    },
+    {
+      "id": 63839759,
+      "firstName": "Adela",
+      "lastName": "Wiza",
+      "email": "Leo_Schinner@hotmail.com"
+    },
+    {
+      "id": 874701,
+      "firstName": "Elsa",
+      "lastName": "Kertzmann",
+      "email": "Baylee_Bartoletti@hotmail.com"
+    },
+    {
+      "id": 78468357,
+      "firstName": "Kassandra",
+      "lastName": "Corkery",
+      "email": "Rickie_Mosciski99@hotmail.com"
+    }
+  ]
+}

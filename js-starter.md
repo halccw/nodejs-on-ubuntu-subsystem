@@ -191,3 +191,55 @@ package.json
 * Travis
 * Appveyor
 * Jenkins
+
+# HTTP
+* Node
+  - http lib
+  - request lib
+* Browser
+  - XMLHttpRequest (XHR) - ugly
+  - jQuery
+  - Fetch
+  - or framework-based
+* Node & Browser
+  - isomorphic-fetch (run on client and server)
+  - xhr
+  - axios
+  - superagent
+
+## Centralized API calls
+- one place to configure all calls
+- handle preloader logic
+- handle errors
+- single seam for mocking
+
+## polyfill
+- a piece of code to mimic missing feature on old browsers
+
+## mocking apis
+* unit test
+* instant response
+* rapid prototyping
+* avoid inter-team bottleneck
+* Options
+  - Nock
+  - static json
+  - create a dev server
+    - api-mock
+    - json server (actually updates static data on local file)
+    - json schema faker (fake dynamic data)
+    - browsersync
+    - express, etc
+
+## Mocking HTTP
+* JSON schema faker
+* generate random data
+  - faker.js
+  - chance.js
+  - randexp.js
+* Serve data via API: JSON server
+
+* `import whateverNameWillBeDefaultExport from 'A.js'`
+* `import {namedExport} from 'B.js'`
+
+# Project structure
